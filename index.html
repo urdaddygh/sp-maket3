@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+*{
+    padding: 0;
+}
+.container{
+max-width: 100%;
+height: 100%;
+background: linear-gradient(121.32deg, #FFFFFF 10.96%, #FFFFFF 72%, #FFFFFF 99.98%);
+box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+border-radius: 59px;
+margin:30px 0 0px 0;
+display:flex;
+}
+.leftside{
+height: 100%;
+width: 252px;
+}
+.leftside_text{
+    font-family: Quicksand;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0F4264;
+    display: flex;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+}
+.picture1{
+    position:relative;
+    top:20px;
+    margin-right: 10px;
+}
+.leftside__menu{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 82px 0px 0px 0px;
+}
+.leftside__menu_links{
+display:flex;
+justify-content: center;
+text-align: center;
+}
+.leftside__menu__links_text{
+    height: 17px;
+    width: 79px;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+    opacity: 50%;
+}
+.picture2{
+    position:relative;
+    top:7px;
+}
+.leftside__footer{
+margin:300px auto 0px auto;
+text-align: center;
+}
+.leftside__footer_text{
+    font-family: Suprema;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+    color: #404040;
+    margin-bottom: 28px;
+    margin-top: 41px;
+}
+.leftside__footer_button{
+border-radius: 13.617px;
+background: #FFC145;
+border:none;
+font-family: Quicksand;
+font-size: 11px;
+font-style: normal;
+font-weight: 700;
+line-height: 14px;
+text-align: left;
+margin-bottom: 32px;
+}
+.leftside__line{
+
+}
+
+.upper{
+width: 1300px;
+margin: 0px 0px 0px 118px;
+display:flex;
+flex-direction: row;
+}
+.upper__left{
+
+}
+.upper__left_text1{  
+    font-family: Suprema;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 53px;
+    text-align: left;
+    margin-top: auto;
+}
+.upper__left_text2{
+    font-family: Suprema;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    opacity: 50%;
+    position: relative;
+    bottom:35px;
+}
+.upper__right{
+margin:0px 0px 0px 0px;
+}
+.upper__right_text{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: right;
+    position: relative;
+    bottom:50px;
+    margin-right: 227px;
+}
+.upper__right_text2{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: right;
+    opacity: 50%;
+    margin-right: 190px;
+    position: relative;
+    bottom:65px;
+}
+.upper__right_picture{
+    margin-left: 340px;
+    margin-top: 20px;
+}
+.upper__right_flex{
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 10px 0px;
+}
+.task1__cards{
+    border-radius: 28px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 0px 1px 0px #0000000A;
+    box-shadow: 0px 2px 6px 0px #0000000A;
+    box-shadow: 0px 16px 24px 0px #0000000F;
+    display: flex;
+}
+.task1__cards_text1{
+    font-family: Suprema;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 24px;
+}
+.task1__cards_card{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.task1__cards_flex1{
+display: flex;
+}
+.task1__cards_text2{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    margin:15px 80px 0px 40px;
+    opacity: 50%;
+}
+.task1__cards_text3{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+}
+.task1__cards_right{
+margin: 30px 40px 0px 0px;
+text-align: right;
+}
+.task1__cards_right_text1{
+    border-radius: nullpx;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color:#197BBD;
+}
+.task1__cards_right_text2{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    color:#439A86;
+}
+.task1__cards_right_text3{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    color: #BB4430;
+}
+.task1__cards_right_text4{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    opacity: 50%;
+    position: relative;
+    bottom:15px;
+}
+.task1__trans{
+    border-radius: 19.004404067993164px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px 0px #0000000A;
+    box-shadow: 0px 2px 6px 0px #0000000A;
+    box-shadow: 0px 16px 24px 0px #0000000F;
+}
+.task1__trans_text{
+    font-family: Suprema;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 24px;
+}
+.task1__trans_flex{
+display: flex;
+}
+.task1__trans_flex_box1{
+margin: 0px 50px 0px 0px;
+}
+.task1__trans_flex_box1_text{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    opacity: 50%;
+    margin-bottom: 34px;
+    white-space: nowrap;
+}
+.task1__trans_flex_box1_text1{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    position: relative;
+    bottom:12px;
+    white-space: nowrap;
+}
+.picture3{  
+    display: flex;
+    margin: 0px auto;
+}
+.task1__trans_flex_box1_text2{
+    font-family: Suprema;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    margin-bottom: 34px;
+}
+.upper__right_text1{
+    font-family: Suprema;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    display: flex;
+    margin-left:32px;
+}
+.upper__right_text1_pos{
+    position: relative;
+    left:10px;
+    top:25px;
+}
+.upper__right_flex1{
+display: flex;
+margin-left:32px;
+}
+.upper__right_flex1_box1{
+margin:0px 14px 0px 0px;
+background: #FFFFFF;
+box-shadow: 0px 0px 1px 0px #0000000A;
+box-shadow: 0px 2px 6px 0px #0000000A;
+box-shadow: 0px 16px 24px 0px #0000000F;
+width: 158px;
+height: 169px;
+border-radius:28px;
+}
+.upper__right_flex1_box1_text{
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#696969;
+    margin-left:15px;
+}
+.upper__right_flex1_text2{
+    font-family: Suprema;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin:0px 0px 15px 15px;
+}
+.upper__right_flex1_margin{
+    margin:0px 0px 0px 15px;
+}
+.upper__right_text4{
+    margin:50px 0px 0px 40px;
+    font-family: Suprema;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+}
+.upper__right_lower{
+display:flex;
+}
+.upper__right_lower_box1{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px 0px #0000000A;
+    box-shadow: 0px 2px 6px 0px #0000000A;
+    box-shadow: 0px 16px 24px 0px #0000000F;    
+    border-radius: 28px;
+    margin-left: 40px;
+}
+.upper__right_lower_box1_column{
+display:flex;
+text-align: center;
+}
+.upper__right_lower_box1_flex{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0px 15px 0px 0px;
+font-family: Suprema;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px;
+color: #404040;
+
+}
+.upper__right_lower_box1_form{
+display: flex;
+
+}
+.upper__right_lower_box1_form_end{
+    background: #FFFFFF;
+    border: 1px solid #197BBD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 175px;
+    height: 36px;
+    margin-left: 15px;
+}
+.upper__right_lower_box1_flex_pos{
+margin-bottom: 22px;
+position: relative;
+top:15px;
+left:15px;
+}
+</style>
+ <div class="container">
+
+        <div class="leftside">
+
+            <div class="leftside_text">
+            <img class="picture1" src="Pictures/1.jpg"  width="43,41px" height="
+            28,39px">
+            <h2>cloudcash</h2>
+            </div>
+            <div class="leftside__menu"> 
+                <div class="leftside__menu_links">
+                    <img class="picture2" src="Pictures/menu1.jpg" width="30px" height="30px">
+                    <h3 class="leftside__menu__links_text">Overview</h3>
+                </div>
+                <div class="leftside__menu_links">
+                    <img class="picture2" src="Pictures/menu2.jpg" width="30px" height="30px">
+                    <h3 class="leftside__menu__links_text">Transactions</h3>
+                </div>
+                <div class="leftside__menu_links" >
+                    <img class="picture2" src="Pictures/menu3.jpg" width="30px" height="30px">
+                    <h3 class="leftside__menu__links_text">Cards</h3>
+                </div>
+                <div class="leftside__menu_links">
+                    <img class="picture2" src="Pictures/menu4.jpg" width="30px" height="30px">
+                    <h3 class="leftside__menu__links_text">Invoices</h3>
+                </div>
+                <div class="leftside__menu_links">
+                    <img class="picture2" src="Pictures/menu5.jpg" width="30px" height="30px">
+                    <h3 class="leftside__menu__links_text">Goals</h3>
+                </div>
+                <div class="leftside__menu_links">
+                    <img class="picture2" src="Pictures/menu6.jpg" width="30px" height="30px">
+                    <h3 class="leftside__menu__links_text">Settings</h3>
+                </div>
+            </div>
+            <div class="leftside__footer">
+                <img src="Pictures/2.jpg" width="
+                57,76px" height="37,77px">
+                <h3 class="leftside__footer_text">Give your money<br>
+                    awesome space in cloud</h3>
+                <form class="leftside__footer_form">
+                    <button class="leftside__footer_button">
+                        <h3>Upgrade to premium</h3>
+                    </button>
+                </form>
+            </div>
+            <div class="leftside__line"></div>
+          </div>
+    <div class="upper">
+        <div class="upper__left">
+        <h3 class="upper__left_text1">Weekly sumup</h3>
+        <h3 class="upper__left_text2">Get summary of your weekly online transactions here.</h3>
+
+        <div class="task1">
+            <div class="task1__cards">
+                <div class="task1__cards_flex">
+                <h3 class="task1__cards_text1">Cards</h3>
+                <img class="task1__cards_card" src="Pictures/4.jpg" width="320,43px" height="206,17px">
+                  <div class="task1__cards_flex1">
+                  <h3 class="task1__cards_text2">Weekly payment limit</h3>
+                  <h3 class="task1__cards_text3">$350.60 / $4000</h3>
+                </div>
+            </div>
+                <div class="task1__cards_right">
+                    <h3 class="task1__cards_right_text1">$ 2850.75<br> <h3 class="task1__cards_right_text4">Current balance</h3></h3>
+                    <h3 class="task1__cards_right_text2">$ 1500.50<br> <h3 class="task1__cards_right_text4">Income</h3></h3>
+                    <h3 class="task1__cards_right_text3">$ 350.60<br> <h3 class="task1__cards_right_text4">Outcome</h3></h3>
+                    <img src="Pictures/5.jpg">
+                    <h3 class="task1__cards_right_text4">Deacivate card</h3>
+                </div>
+            </div>
+            <div class="task1__trans">
+                <h3 class="task1__trans_text">Transaction history</h3>
+                <div class="task1__trans_flex">
+                    <div class="task1__trans_flex_box1">
+                        <h3 class="task1__trans_flex_box1_text">Reciever</h3>
+                        <div class="picture3">
+                            <img src="Pictures/6.jpg" width="20px" height="20px">
+                             <h3 class="task1__trans_flex_box1_text1">Tesco Market</h3>
+                        </div>
+                        <div class="picture3"> 
+                            <img src="Pictures/7.jpg" width="20px" height="20px">
+                            <h3 class="task1__trans_flex_box1_text1">ElectroMen Market</h3> 
+                        </div>
+                        <div class="picture3"> 
+                            <img src="Pictures/8.jpg" width="20px" height="20px">
+                            <h3 class="task1__trans_flex_box1_text1">Fiorgio Restaurant</h3> 
+                        </div>
+                        <div class="picture3">
+                            <img src="Pictures/9.jpg" width="20px" height="20px">
+                             <h3 class="task1__trans_flex_box1_text1">John Mathew Kayne</h3> 
+                        </div>
+                        <div class="picture3">
+                            <img src="Pictures/9.jpg" width="20px" height="20px">
+                             <h3 class="task1__trans_flex_box1_text1">Ann Marlin</h3> 
+                        </div>
+                    </div>
+                    <div class="task1__trans_flex_box1">
+                        <h3 class="task1__trans_flex_box1_text">Type</h3>
+                        <h3 class="task1__trans_flex_box1_text">Shopping</h3>
+                        <h3 class="task1__trans_flex_box1_text">Shopping</h3>
+                        <h3 class="task1__trans_flex_box1_text">Food</h3>
+                        <h3 class="task1__trans_flex_box1_text">Sport</h3>
+                        <h3 class="task1__trans_flex_box1_text">Shopping</h3>
+                    </div>
+                    <div class="task1__trans_flex_box1">
+                        <h3 class="task1__trans_flex_box1_text">Date</h3>
+                        <h3 class="task1__trans_flex_box1_text">13 Dec 2020</h3>
+                        <h3 class="task1__trans_flex_box1_text">14 Dec 2020</h3>
+                        <h3 class="task1__trans_flex_box1_text">07 Dec 2020</h3>
+                        <h3 class="task1__trans_flex_box1_text">06 Dec 2020</h3>
+                        <h3 class="task1__trans_flex_box1_text">31 Nov 2020</h3>
+                    </div>
+                    <div class="task1__trans_flex_box1">
+                        <h3 class="task1__trans_flex_box1_text">Amount</h3>
+                        <h3 class="task1__trans_flex_box1_text2">$75.67</h3>
+                        <h3 class="task1__trans_flex_box1_text2">$250.00</h3>
+                        <h3 class="task1__trans_flex_box1_text2">$19.50</h3>
+                        <h3 class="task1__trans_flex_box1_text2">$350</h3>
+                        <h3 class="task1__trans_flex_box1_text2">$430</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="upper__right">
+            <img class="upper__right_picture" src="Pictures/3.jpg" width="126px" height="35px">
+            
+                <h3 class="upper__right_text">Andrew<h3 class="upper__right_text2">Admin account</h3></h3>
+           
+
+            <div class="upper__right_text1">
+                <h3>Goals</h3>
+                <img class="upper__right_text1_pos" src="Pictures/10.jpg" width="20px" height="20px">
+            </div>
+            <div class="upper__right_flex1">
+                <div class="upper__right_flex1_box1">
+                    <h3 class="upper__right_flex1_box1_text">$550
+                        <h3 class="task1__cards_right_text4 upper__right_flex1_margin">12/20/20</h3>
+                    </h3>
+                    <img class="upper__right_flex1_margin" src="Pictures/11.jpg">
+                    <h3 class="upper__right_flex1_text2">Holidays</h3>
+                </div>
+                <div class="upper__right_flex1_box1">
+                    <h3 class="upper__right_flex1_box1_text">$200
+                        <h3 class="task1__cards_right_text4 upper__right_flex1_margin" >12/20/20</h3>
+                    </h3>
+                    <img class="upper__right_flex1_margin" src="Pictures/12.jpg">
+                    <h3 class="upper__right_flex1_text2">Renovation</h3>
+                </div>
+                <div class="upper__right_flex1_box1">
+                    <h3 class="upper__right_flex1_box1_text">$820
+                        <h3 class="task1__cards_right_text4 upper__right_flex1_margin">12/20/20</h3>
+                    </h3>
+                    <img class="upper__right_flex1_margin" src="Pictures/13.jpg ">
+                    <h3 class="upper__right_flex1_text2">Xbox</h3>
+                </div>
+            </div>
+            <h3 class="upper__right_text4">Outcome Statistics</h3>
+            <img src="Pictures/14.jpg">
+            <img src="Pictures/15.jpg">
+            <img src="Pictures/16.jpg">
+
+
+            <div class="upper__right_lower">
+                <div class="upper__right_lower_box1">
+                    <h3>New transaction</h3>
+                    <div class="upper__right_lower_box1_column">
+                    <div class="upper__right_lower_box1_flex">
+                        <img src="Pictures/17.jpg" width="42px" height="42px">
+                        <h3>Ann</h3>
+                    </div>
+                    <div class="upper__right_lower_box1_flex">
+                        <img src="Pictures/18.jpg" width="42px" height="42px">
+                        <h3>Monica</h3>
+                    </div>
+                    <div class="upper__right_lower_box1_flex">
+                        <img src="Pictures/19.jpg" width="42px" height="42px">
+                        <h3>John</h3>
+                    </div>
+                    <div class="upper__right_lower_box1_flex">
+                        <img src="Pictures/20.jpg" width="42px" height="42px">
+                        <h3>Mike</h3>
+                    </div>
+                    <div class="upper__right_lower_box1_flex">
+                        <img src="Pictures/21.jpg" width="42px" height="42px">
+                        <h3>Mia</h3>
+                    </div>
+                    <div class="upper__right_lower_box1_flex">
+                        <img class="upper__right_lower_box1_flex_pos" src="Pictures/10.jpg" width="20px" height="20px">
+                        <h3>Add New</h3>
+                    </div>
+                </div>
+                <div class="upper__right_lower_box1_form">
+                    <form >
+                        <input class="upper__right_lower_box1_form_end" placeholder="  0                                      $ " type="text" name="" value=""/> 
+                        <button class="leftside__footer_button">
+                            <h3>Send the transfer ></h3>
+                        </button>
+                    </form>
+                </div>
+                </div>
+                <div class="upper__right_lower_box2">
+                    <img src="Pictures/22.jpg" >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
